@@ -1,5 +1,13 @@
 #Guide in creating the PRODUCT Table
 #Keywords of SQL are ALL CAPITALIZE for EMPHASIS only.
+#================================
+# Author: Christian A. Balderrama
+# Facebook: /christian.balderrama
+# Twitter:	@DevSlashXtian
+# Github:	softwaredevxtian
+#================================
+
+#Creating the Product table
 CREATE TABLE product (prodCode VARCHAR(6) NOT NULL PRIMARY KEY, description VARCHAR(20), unit CHAR(3) CONSTRAINT unit_check (unit IN ('EA','PC','PKG','MTR'), unitPrice DECIMAL(10,2), date_created DATE NOT NULL))
 
 #Creating SEQUENCE for the PC prodCode
@@ -18,8 +26,3 @@ INSERT INTO product VALUES('PC' || LPAD(NEXT VALUE FOR product_sequence,4,'0'), 
 #Checking the data inside the PRODUCT Table
 SET SCHEMA schemaName
 SELECT * FROM product
-
-
-# -Dev
-# Facebook: /christian.balderrama
-# Twitter: @DevSlashXtian
