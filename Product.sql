@@ -1,11 +1,11 @@
-#Guide in creating the PRODUCT Table
+#Guide in creating the Product Table
 #Keywords of SQL are ALL CAPITALIZE for EMPHASIS only.
-#================================
+#=====================================================
 # Author: Christian A. Balderrama
-# Facebook: /christian.balderrama
+# Facebook: /christian.balderrama.71
 # Twitter:	@DevSlashXtian
 # Github:	softwaredevxtian
-#================================
+#======================================================
 
 #Creating the Product table
 CREATE TABLE product (prodCode VARCHAR(6) NOT NULL PRIMARY KEY, description VARCHAR(20), unit CHAR(3) CONSTRAINT unit_check (unit IN ('EA','PC','PKG','MTR'), unitPrice DECIMAL(10,2), date_created DATE NOT NULL))

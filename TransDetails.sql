@@ -1,9 +1,11 @@
-#================================
+#Guide in creating the TransDetails Table
+#Keywords of SQL are ALL CAPITALIZE for EMPHASIS only.
+#=====================================================
 # Author: Christian A. Balderrama
-# Facebook: /christian.balderrama
+# Facebook: /christian.balderrama.71
 # Twitter:	@DevSlashXtian
 # Github:	softwaredevxtian
-#================================
+#======================================================
 
 #Creating the table
 CREATE TABLE transDetails (transNo VARCHAR(6) NOT NULL REFERENCES transaction, prodCode VARCHAR(6) NOT NULL REFERENCES product, quantity DECIMAL(10,2), PRIMARY KEY(transNo,prodCode))

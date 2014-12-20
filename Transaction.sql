@@ -1,9 +1,11 @@
-#================================
+#Guide in creating the Transaction Table
+#Keywords of SQL are ALL CAPITALIZE for EMPHASIS only.
+#=====================================================
 # Author: Christian A. Balderrama
-# Facebook: /christian.balderrama
+# Facebook: /christian.balderrama.71
 # Twitter:	@DevSlashXtian
 # Github:	softwaredevxtian
-#================================
+#======================================================
 
 #Creating Transaction Table
 CREATE TABLE Transaction(transNo VARCHAR(6) NOT NULL PRIMARY KEY, sales_date DATE NOT NULL, branchCode VARCHAR(4) NOT NULL, FOREIGN KEY(branchCode) REFERENCES branch)
